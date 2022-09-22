@@ -1,0 +1,4 @@
+Para correr la simulación es necesario primero correr los programas exp-decay.py y bin-decay.py para generar los archivos .txt en la carpeta 'datos' con los histogramas de la actividad del Cesio-137, luego de esto se corre el programa graficos.py que recoge los datos arrojados por la simulación y produce las gráficas necesarias para todos los núcleos N propuestos en setup.txt. 
+Es necesario además tener los archivos setup.txt y plot.py en la misma carpeta que exp y bin-decay.py. 
+El archivo plot.py es simplemente un modulo para estandarizar la estética de las gráficas.
+El archivo requirements.py incluye las librerias necesarias para correr la simulación, pueden instalarse usando el comando 'pip install -r requirements.py'
