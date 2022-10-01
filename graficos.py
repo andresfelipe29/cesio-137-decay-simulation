@@ -89,6 +89,7 @@ for nucleos in N:
     plt.step(x, exp_hist, where='mid', label='A(t)')
     plt.plot(x, Actividad(x, nucleos), color='red', label='Teórico')
     plt.legend()
+    plt.ylim(bottom=0.1)
     plt.savefig('graficos/exp-'+str(nucleos)+'.pdf')
 
     #plot Actividad binomial
@@ -109,6 +110,7 @@ for nucleos in N:
     plt.step(x, exp_hist, where='mid', label='A(t) Exponencial')
     plt.plot(x, Actividad(x, nucleos), color='red', label='Teórico')
     plt.legend()
+    plt.ylim(bottom=0.1)
     plt.savefig('graficos/bin-'+str(nucleos)+'.pdf')
 
     #plot nucleos restantes binomial y exponencial
@@ -132,6 +134,7 @@ for nucleos in N:
     plt.step(x, exp_rest, where='mid', label='N(t) Exponencial')
     plt.plot(x, Restantes(x, nucleos), color='red', label='Teórico')
     plt.legend()
+    plt.ylim(bottom=0.1)
     plt.savefig('graficos/bin-res-'+str(nucleos)+'.pdf')
 
     print('Núcleos restantes exp:\t', exp_rest[-1])
