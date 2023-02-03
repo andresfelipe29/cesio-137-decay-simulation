@@ -4,8 +4,8 @@ This project showcases a simulation of the decay process of Cesium-137 using an 
 
 # Simulation
 
-In order to run the simulation, it is first necessary to run the programs "exp-decay.py" and "bin-decay.py", they generate the .txt files containing the data with wich the histograms are built.
+In order to run the simulation, it is first necessary to run the programs "exp-decay.py" and "bin-decay.py", they generate the .txt files in "datos" containing the data with wich the histograms are built.
 
 # Graphics
 
-"graficos.py" colects all the data and creates the graphs for all N-nuclei specified in "setup.txt".
+"graficos.py" colects all the data and creates the graphs for all N-nuclei specified in "setup.txt", the graphs are then saved to "graficos"
